@@ -1,24 +1,10 @@
 from flask import Flask, render_template
+from config import create_app
+from controller import routes
 
-app = Flask(__name__)
-
-
-@app.route("/")
-def index():
-	return render_template("index.html")
-
-@app.route("/signin")
-def signin():
-	return render_template("login.html")
-
-@app.route("/signup")
-def signup():
-	return render_template("registration.html")
-
-@app.route("/anketa")
-def anketa():
-	return render_template("anketa.html")
+app = create_app()
 
 
+app.register_blueprint(routes)
 if __name__ == '__main__':
 	app.run(debug=True)
