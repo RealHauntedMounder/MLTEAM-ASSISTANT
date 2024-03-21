@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@fingerprintjs/fingerprintjs-pro": "^3.9.0",
+    "@tailwindcss/forms": "^0.5.7",
     "tw-elements": "^1.1.0"
   },
   "devDependencies": {
