@@ -15,7 +15,7 @@ babel = Babel()
 
 def create_app():
     application = Flask(__name__)
-    application.config['SECRET_KEY'] = '\xbf\x05E\xe7\xc0W\x86nU8\xf9U\x9e8\xe5\xeb'
+  
     application.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost/project'
     application.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
     db.init_app(application)
